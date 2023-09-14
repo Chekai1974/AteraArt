@@ -1,0 +1,90 @@
+.section2-container {
+  width: 100%;
+  .section2-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0px;
+    .card1 {
+      display: flex;
+      justify-content: space-around;
+      .text1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title1 {
+          width: 366px;
+          padding-bottom: 60px;
+          border-bottom: 1px solid #707070;
+          h1 {
+            color: #2b2b2b;
+            font-family: $original-f-f;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        p {
+          width: 377px;
+          margin-top: 40px;
+          color: #2b2b2b;
+          font-family: $original-f-f;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32.4px;
+        }
+        .btn1 {
+          margin-top: 50px;
+        }
+      }
+      .img {
+        background-image: $section2-photo;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 490px;
+      }
+    }
+    .card2 {
+      box-sizing: border-box;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      .title2 {
+        margin: auto;
+        width: 400px;
+        text-align: center;
+        h1 {
+          color: #2b2b2b;
+          font-family: $original-f-f;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26.4px;
+        }
+      }
+      .text2 {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 377px;
+        border-left: 1px solid #707070;
+        padding-left: 60px;
+        p {
+          color: #2b2b2b;
+          font-family: $original-f-f;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32.4px;
+        }
+      }
+      .btn2 {
+        margin-top: 50px;
+      }
+    }
+  }
+}

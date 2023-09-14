@@ -1,0 +1,30 @@
+.nav-container {
+  width: 100%;
+  .nav-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        scale: 0.4;
+      }
+      .routs {
+        display: flex;
+        gap: 60px;
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          font-family: $original-f-f;
+          color: black;
+        }
+        .active {
+          font-size: 18px;
+          color: #f5e1da;
+        }
+      }
+    }
+  }
+}

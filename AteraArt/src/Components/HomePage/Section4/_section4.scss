@@ -1,0 +1,120 @@
+.section4-container {
+  width: 100%;
+  .section4-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    h1 {
+      margin: 180px 0px 60px 0px;
+      color: #2b2b2b;
+      text-align: center;
+      font-family: $original-f-f;
+      font-size: 63px;
+      font-weight: 400;
+      line-height: 84px;
+    }
+    .album {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 24px;
+      h2 {
+        opacity: 0;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-family: $original-f-f;
+        font-weight: 400;
+        line-height: 84px;
+      }
+      .one {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        width: 100%;
+        .photo1 {
+          display: flex;
+          align-items: center;
+          background-image: $photo1;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 763px;
+          height: 522px;
+          transition: filter 0.5s ease, brightness 0.5s ease;
+        }
+        .photo2 {
+          display: flex;
+          align-items: center;
+          background-image: $photo2;
+          background-size: cover;
+          background-position: 80% 100%;
+          background-repeat: no-repeat;
+          width: 368px;
+          height: 522px;
+          transition: filter 0.5s ease, brightness 0.5s ease;
+        }
+      }
+      .two {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .photo3 {
+            display: flex;
+            align-items: center;
+            background-image: $photo3;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 540px;
+            height: 549px;
+            transition: filter 0.5s ease, brightness 0.5s ease;
+          }
+          .photo4 {
+            display: flex;
+            align-items: center;
+            background-image: $photo5;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 540px;
+            height: 339px;
+            transition: filter 0.5s ease, brightness 0.5s ease;
+          }
+        }
+        .right {
+          .photo5 {
+            display: flex;
+            align-items: center;
+            background-image: $photo4;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 588px;
+            height: 908px;
+            transition: filter 0.5s ease, brightness 0.5s ease;
+          }
+        }
+      }
+      .photo1:hover,
+      .photo2:hover,
+      .photo3:hover,
+      .photo4:hover,
+      .photo5:hover {
+        filter: brightness(0.7) grayscale(100%);
+        h2 {
+          opacity: 1;
+        }
+      }
+    }
+    .section4-footer {
+      text-align: center;
+      p{
+        margin: 50px 0px 20px 0px;
+      }
+    }
+  }
+}
