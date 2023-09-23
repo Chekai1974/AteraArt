@@ -1,9 +1,11 @@
 .section2-container {
+  padding: 100px 0px 100px 0px;
+background: rgb(221,221,221);
+background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 47%, rgba(121,121,121,1) 100%);
   width: 100%;
   .section2-content {
     width: 1200px;
     margin: 0 auto;
-    padding: 120px 0px;
     .card1 {
       display: flex;
       justify-content: space-around;
@@ -35,6 +37,7 @@
           line-height: 32.4px;
         }
         .btn1 {
+          color: white;
           margin-top: 50px;
         }
       }

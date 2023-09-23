@@ -3,7 +3,7 @@
 .style1 {
   width: 220px;
   height: 40px;
-  background-color: #B28F80;
+  background-color: #837f7f;
   border: none;
   font-family: "Inter";
   font-size: 14px;
@@ -11,11 +11,12 @@
   font-weight: 400;
   line-height: 16.8px;
   letter-spacing: 2.8px;
+  color: white;
 }
 
 .style2 {
-  width: 180px;
-  height: 40px;
+  width: 190px;
+  height: 45px;
   background-color: #2B2B2B;
   border: none;
   font-family: "Inter";
@@ -52,10 +53,14 @@
   text-decoration: none;
   font-family: "Inter";
   color: black;
+  transition: all 0.3s ease;
+}
+.nav-container .nav-content .navigation .routs a:hover {
+  color: #606060;
 }
 .nav-container .nav-content .navigation .routs .active {
   font-size: 18px;
-  color: #f5e1da;
+  color: #606060;
 }
 
 .section1-container {
@@ -84,12 +89,14 @@
 }
 
 .section2-container {
+  padding: 100px 0px 100px 0px;
+  background: rgb(221, 221, 221);
+  background: linear-gradient(108deg, rgb(221, 221, 221) 5%, rgb(222, 222, 222) 47%, rgb(121, 121, 121) 100%);
   width: 100%;
 }
 .section2-container .section2-content {
   width: 1200px;
   margin: 0 auto;
-  padding: 120px 0px;
 }
 .section2-container .section2-content .card1 {
   display: flex;
@@ -124,10 +131,11 @@
   line-height: 32.4px;
 }
 .section2-container .section2-content .card1 .text1 .btn1 {
+  color: white;
   margin-top: 50px;
 }
 .section2-container .section2-content .card1 .img {
-  background-image: url("../Images/section2.png");
+  background-image: url("../Images/HomePagePhoto/Family.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -198,15 +206,17 @@
 }
 
 .section4-container {
+  padding: 100px 0px 100px 0px;
+  background: rgb(221, 221, 221);
+  background: linear-gradient(108deg, rgb(221, 221, 221) 5%, rgb(222, 222, 222) 47%, rgb(121, 121, 121) 100%);
   width: 100%;
 }
 .section4-container .section4-content {
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 .section4-container .section4-content h1 {
-  margin: 180px 0px 60px 0px;
+  margin: 0px 0px 60px 0px;
   color: #2b2b2b;
   text-align: center;
   font-family: "Inter";
@@ -239,7 +249,7 @@
 .section4-container .section4-content .album .one .photo1 {
   display: flex;
   align-items: center;
-  background-image: url("../Images/section4_photo1.jpg");
+  background-image: url("../Images/HomePagePhoto/Katya.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -250,7 +260,7 @@
 .section4-container .section4-content .album .one .photo2 {
   display: flex;
   align-items: center;
-  background-image: url("../Images/section4_photo2.jpg");
+  background-image: url("../Images/HomePagePhoto/Tanya2.JPG");
   background-size: cover;
   background-position: 80% 100%;
   background-repeat: no-repeat;
@@ -270,7 +280,7 @@
 .section4-container .section4-content .album .two .left .photo3 {
   display: flex;
   align-items: center;
-  background-image: url("../Images/section4_photo3.jpg");
+  background-image: url("../Images/HomePagePhoto/Sasha.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -281,7 +291,7 @@
 .section4-container .section4-content .album .two .left .photo4 {
   display: flex;
   align-items: center;
-  background-image: url("../Images/section4_photo5.jpg");
+  background-image: url("../Images/HomePagePhoto/Ira.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -292,7 +302,7 @@
 .section4-container .section4-content .album .two .right .photo5 {
   display: flex;
   align-items: center;
-  background-image: url("../Images/section4_photo4.jpg");
+  background-image: url("../Images/HomePagePhoto/Tanya3.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,4 +329,132 @@
 }
 .section4-container .section4-content .section4-footer p {
   margin: 50px 0px 20px 0px;
+}
+.section4-container .section4-content .section4-footer .btn {
+  color: white;
+}
+
+.gif {
+  width: 100%;
+  height: 650px;
+  background-image: url("../Images/mzu.gif");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.gif h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 84px;
+  color: white;
+}
+
+.section6-container {
+  padding: 100px 0px 100px 0px;
+  background: rgb(221, 221, 221);
+  background: linear-gradient(108deg, rgb(221, 221, 221) 5%, rgb(222, 222, 222) 47%, rgb(121, 121, 121) 100%);
+  width: 100%;
+}
+.section6-container .section6-content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.section6-container .section6-content .slider {
+  transition: all 0.3 ease-in-out;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.section6-container .section6-content .slider .photo {
+  position: relative;
+  width: 390px;
+  height: 580px;
+}
+.section6-container .section6-content .slider .photo img {
+  width: 390px;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section6-container .section6-content .slider .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 350px;
+}
+.section6-container .section6-content .slider .text p {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 300;
+}
+.section6-container .section6-content .slider .text #main-text {
+  line-height: 32.4px;
+}
+.section6-container .section6-content .slider .text #title,
+.section6-container .section6-content .slider .text #sine {
+  font-size: 22px;
+  font-weight: 300;
+}
+.section6-container .section6-content .on {
+  filter: brightness(0.9) grayscale(100%);
+  transition: all 0.3 ease-in-out;
+  opacity: 0.5;
+}
+.section6-container .section6-content h1 {
+  cursor: pointer;
+  font-size: 80px;
+  font-family: "Inter";
+  font-weight: 500;
+  color: #837f7f;
+}
+.section6-container .section6-content #left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.section6-container .section6-content #right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.footer-container .footer-content {
+  padding: 30px;
+  background-color: #2B2B2B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container .footer-content p {
+  font-family: "Inter";
+  font-size: 16px;
+  color: white;
+}
+.footer-container .footer-content .instagram {
+  display: flex;
+  align-items: center;
+}
+.footer-container .footer-content .instagram span {
+  text-decoration: underline;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.footer-container .footer-content .instagram a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

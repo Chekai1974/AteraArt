@@ -1,11 +1,13 @@
 .section4-container {
+  padding: 100px 0px 100px 0px;
+background: rgb(221,221,221);
+background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 47%, rgba(121,121,121,1) 100%);;
   width: 100%;
   .section4-content {
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 100px;
     h1 {
-      margin: 180px 0px 60px 0px;
+      margin: 0px 0px 60px 0px;
       color: #2b2b2b;
       text-align: center;
       font-family: $original-f-f;
@@ -112,8 +114,11 @@
     }
     .section4-footer {
       text-align: center;
-      p{
+      p {
         margin: 50px 0px 20px 0px;
+      }
+      .btn {
+        color: white;
       }
     }
   }

@@ -6,7 +6,7 @@ function Section3() {
         <h1>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse..
         </h1>
-        <button className="btn style1">Lorem, ipsum dolor.</button>
+        <button className="btn style2">Lorem, ipsum</button>
       </div>
     </div>
   );

@@ -23,12 +23,6 @@ function Navigation() {
               About me
             </NavLink>
             <NavLink
-              to="albums"
-              className={location.pathname === "/albums" ? "active" : ""}
-            >
-              Albums
-            </NavLink>
-            <NavLink
               to="booking"
               className={location.pathname === "/booking" ? "active" : ""}
             >

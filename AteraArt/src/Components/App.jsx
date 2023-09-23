@@ -5,11 +5,9 @@ import HomePage from "./HomePage/HomePage";
 function App() {
   return (
     <Router>
-      {/* <Navigation></Navigation> */}
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
         <Route path="/aboutme"></Route>
-        <Route path="/albums"></Route>
         <Route path="/booking"></Route>
       </Routes>
     </Router>

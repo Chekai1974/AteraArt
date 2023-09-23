@@ -22,7 +22,7 @@ function Section2() {
               neque, quisquam laboriosam, error temporibus sequi, accusamus
               dolores officiis eum eius ad alias labore? Repellat, nulla?
             </p>
-            <button className="btn1 style1">Lorem ipsum</button>
+            <button className="btn1 style2">Lorem ipsum</button>
           </div>
           <div className="img">
           </div>
@@ -46,7 +46,7 @@ function Section2() {
               neque, quisquam laboriosam, error temporibus sequi, accusamus
               dolores officiis eum eius ad alias labore? Repellat, nulla?
             </p>
-            <button className="btn2 style1">Lorem ipsum</button>
+            <button className="btn2 style2">Lorem ipsum</button>
           </div>
         </div>
       </div>

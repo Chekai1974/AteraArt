@@ -19,10 +19,14 @@
           text-decoration: none;
           font-family: $original-f-f;
           color: black;
+          transition: all 0.3s ease;
+          &:hover{
+            color: #606060;
+          }
         }
         .active {
           font-size: 18px;
-          color: #f5e1da;
+          color: #606060;
         }
       }
     }
