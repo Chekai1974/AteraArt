@@ -1,34 +1,250 @@
 .nav-container {
+  position: relative;
+  background-image: $section1-bg;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 60vh;
   .nav-content {
-    width: 1200px;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
-    padding-top: 60px;
     .navigation {
       display: flex;
-      align-items: center;
+      width: 100%;
       justify-content: space-around;
-      img {
-        scale: 0.4;
+      align-items: center;
+      #logo {
+        width: 135px;
+        height: 40px;
+      }
+      .burger-logo {
+        img {
+          display: none;
+          width: 60px;
+        }
       }
       .routs {
         display: flex;
+        align-items: center;
         gap: 60px;
         a {
-          font-size: 16px;
+          font-size: 20px;
           text-decoration: none;
           font-family: $original-f-f;
           color: black;
           transition: all 0.3s ease;
-          &:hover{
-            color: #606060;
+          &:hover {
+            color: #ffffff;
           }
         }
-        .active {
-          font-size: 18px;
-          color: #606060;
+        a.active {
+          color: #fffbd0;
         }
       }
     }
+    .title {
+      width: 600px;
+      text-align: center;
+      p {
+        padding: 80px 0px;
+        font-size: 30px;
+        font-family: $original-f-f;
+        font-weight: 400;
+        line-height: 40px;
+        color: white;
+      }
+    }
+  }
+}
+.nav-container.active {
+  animation: slideDown 1s ease-in-out;
+  padding: 40px;
+  background: rgb(132, 132, 132);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  z-index: 9999999;
+  .nav-content {
+    position: relative;
+    display: block;
+    width: 100%;
+    .navigation {
+      display: flex;
+      width: 200px;
+      flex-direction: column;
+      border-left: 2px solid black;
+      gap: 400px;
+      .routs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+      }
+      .burger-logo {
+        img {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 100px;
+          width: 60px;
+        }
+      }
+    }
+    .title {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .nav-container {
+    width: 100%;
+    height: 50vh;
+    .nav-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        #logo {
+          width: 135px;
+          height: 40px;
+        }
+        .routs {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            font-family: $original-f-f;
+            color: black;
+            transition: all 0.3s ease;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+          .active {
+            color: #fffbd0;
+          }
+        }
+      }
+      .title {
+        width: 500px;
+        text-align: center;
+        p {
+          font-size: 18px;
+          font-family: $original-f-f;
+          font-weight: 400;
+          line-height: 40px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .nav-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      .navigation {
+        display: flex;
+        align-items: center;
+        #logo {
+          width: 135px;
+          height: 40px;
+        }
+        .burger-logo {
+          img {
+            display: block;
+            width: 60px;
+          }
+        }
+        .routs {
+          display: none;
+        }
+      }
+      .title {
+        text-align: center;
+        p {
+          font-size: 25px;
+          font-family: $original-f-f;
+          font-weight: 400;
+          line-height: 40px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .nav-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .nav-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      .navigation {
+        display: flex;
+        align-items: center;
+        #logo {
+          width: 135px;
+          height: 40px;
+        }
+        .burger-logo {
+          img {
+            display: block;
+            width: 60px;
+          }
+        }
+        .routs {
+          display: none;
+        }
+      }
+      .title {
+        width: 300px;
+        text-align: center;
+        p {
+          font-size: 21px;
+          font-family: $original-f-f;
+          font-weight: 400;
+          line-height: 40px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

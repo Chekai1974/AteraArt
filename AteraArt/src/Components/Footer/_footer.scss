@@ -29,3 +29,37 @@
     }
   }
 }
+@media (max-width: 380px) {
+  .footer-container {
+    .footer-content {
+      padding: 30px;
+      background-color: $bg-color-2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      p {
+        text-align: center;
+        font-family: $original-f-f;
+        font-size: 14px;
+        color: white;
+      }
+      .instagram {
+        display: flex;
+        align-items: center;
+        span {
+          text-decoration: underline;
+          background-image: linear-gradient(45deg, #f3ec78, #af4261);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

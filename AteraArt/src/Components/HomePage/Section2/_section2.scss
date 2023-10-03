@@ -1,7 +1,6 @@
 .section2-container {
   padding: 100px 0px 100px 0px;
-background: rgb(221,221,221);
-background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 47%, rgba(121,121,121,1) 100%);
+  background: rgb(209, 209, 209);
   width: 100%;
   .section2-content {
     width: 1200px;
@@ -14,7 +13,7 @@ background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 
         flex-direction: column;
         align-items: center;
         .title1 {
-          width: 366px;
+          max-width: 366px;
           padding-bottom: 60px;
           border-bottom: 1px solid #707070;
           h1 {
@@ -27,7 +26,7 @@ background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 
           }
         }
         p {
-          width: 377px;
+          max-width: 377px;
           margin-top: 40px;
           color: #2b2b2b;
           font-family: $original-f-f;
@@ -56,7 +55,7 @@ background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 
       justify-content: center;
       .title2 {
         margin: auto;
-        width: 400px;
+        max-width: 400px;
         text-align: center;
         h1 {
           color: #2b2b2b;
@@ -73,9 +72,10 @@ background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 377px;
+        max-width: 377px;
         border-left: 1px solid #707070;
         padding-left: 60px;
+        padding-bottom: 20px;
         p {
           color: #2b2b2b;
           font-family: $original-f-f;
@@ -87,6 +87,416 @@ background: linear-gradient(108deg, rgba(221,221,221,1) 5%, rgba(222,222,222,1) 
       }
       .btn2 {
         margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .section2-container {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    .section2-content {
+      width: 100%;
+      margin: 0 auto;
+      .card1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .text1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title1 {
+            width: 100%;
+            padding-bottom: 60px;
+            h1 {
+              font-size: 19px;
+              font-weight: 400;
+              line-height: 26.4px;
+            }
+          }
+          p {
+            width: 100%;
+            margin-top: 40px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+          .btn1 {
+            margin-top: 50px;
+          }
+        }
+        .img {
+          background-image: $section2-photo;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 390px;
+          height: 520px;
+        }
+      }
+      .card2 {
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        .title2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          h1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        .text2 {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          padding-left: 60px;
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+        }
+        .btn2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .section2-container {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    .section2-content {
+      width: 100%;
+      margin: 0 auto;
+      .card1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .text1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title1 {
+            width: 100%;
+            padding-bottom: 30px;
+            h1 {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26.4px;
+            }
+          }
+          p {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+          .btn1 {
+            margin-top: 50px;
+          }
+        }
+        .img {
+          background-image: $section2-photo;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 330px;
+          height: 500px;
+        }
+      }
+      .card2 {
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        .title2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          h1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        .text2 {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          padding-left: 60px;
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+        }
+        .btn2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .section2-container {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    .section2-content {
+      width: 100%;
+      margin: 0 auto;
+      .card1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .text1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title1 {
+            width: 100%;
+            padding-bottom: 30px;
+            h1 {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26.4px;
+            }
+          }
+          p {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+          .btn1 {
+            margin-top: 50px;
+          }
+        }
+        .img {
+          background-image: $section2-photo;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 320px;
+          height: 450px;
+        }
+      }
+      .card2 {
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        .title2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          h1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        .text2 {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          padding-left: 30px;
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+        }
+        .btn2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section2-container {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    .section2-content {
+      width: 100%;
+      margin: 0 auto;
+      .card1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .text1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title1 {
+            width: 100%;
+            padding-bottom: 30px;
+            h1 {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26.4px;
+            }
+          }
+          p {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+          .btn1 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+        }
+        .img {
+          background-image: $section2-photo;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 490px;
+          height: 600px;
+        }
+      }
+      .card2 {
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        .title2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          h1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        .text2 {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          padding-left: 30px;
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+        }
+        .btn2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 515px) {
+  .section2-container {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    .section2-content {
+      width: 100%;
+      margin: 0 auto;
+      .card1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .text1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0px 14px 30px 14px;
+          .title1 {
+            width: 100%;
+            padding-bottom: 30px;
+            h1 {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26.4px;
+            }
+          }
+          p {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+          .btn1 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+        }
+        .img {
+          background-image: $section2-photo;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 320px;
+          height: 500px;
+        }
+      }
+      .card2 {
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        .title2 {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          h1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26.4px;
+          }
+        }
+        .text2 {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 300px;
+          padding-left: 30px;
+          p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 32.4px;
+          }
+        }
+        .btn2 {
+          margin-top: 50px;
+        }
       }
     }
   }
