@@ -66,7 +66,7 @@ function Contact() {
               type="email"
               name="user_email"
               required
-              placeholder="your@gmail.com (be careful not to make a mistake!)"
+              placeholder="your.email@gmail.com"
             />
             <p id="email">INSTAGRAM (Optional)</p>
             <input
@@ -76,7 +76,7 @@ function Contact() {
               placeholder="@your.inst"
             />
             <p>Topic of your Photo shoot*</p>
-            <select id="select" name="user_topic">
+            <select id="select" name="user_topic" >
               <option value="Love 1">Love 1</option>
               <option value="Love 2">Love 2</option>
               <option value="Love 3">Love 3</option>

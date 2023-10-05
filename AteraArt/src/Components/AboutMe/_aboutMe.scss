@@ -76,14 +76,10 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .about-me-container {
-    width: 100%;
-    background: rgb(209, 209, 209);
     .about-me-content {
-      position: relative;
       width: 100%;
-      margin: 0 auto;
       #since {
         width: 90%;
         margin: 0 auto;
@@ -99,10 +95,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 60px;
         img {
-          width: 490px;
-          height: 700px;
+          width: 400px;
+          height: 580px;
         }
         .line {
           width: 0px;
@@ -151,6 +147,243 @@
         }
         .contact-btn {
           margin-bottom: 150px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .about-me-container {
+    .about-me-content {
+      width: 100%;
+      #since {
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0px;
+        color: #2b2b2b;
+        text-align: center;
+        font-family: $original-f-f;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 43.2px;
+      }
+      .sasha-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        img {
+          width: 420px;
+          height: 600px;
+        }
+        .line {
+          display: none;
+        }
+        .info-text {
+          width: 80%;
+          h2 {
+            font-family: $original-f-f;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+          }
+          p {
+            margin-top: 20px;
+            font-family: $original-f-f;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32.4px;
+            color: rgb(103, 103, 103);
+          }
+        }
+      }
+      .contact-us {
+        text-align: center;
+        margin-top: 150px;
+        h2 {
+          font-family: $original-f-f;
+          font-size: 31px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 43.2px;
+          color: rgb(103, 103, 103);
+        }
+        p {
+          margin: 25px 0px;
+          font-family: $original-f-f;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 33.2px;
+          color: rgb(103, 103, 103);
+        }
+        .contact-btn {
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    width: 100%;
+    background: rgb(209, 209, 209);
+    .about-me-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      #since {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0px;
+        color: #2b2b2b;
+        text-align: center;
+        font-family: $original-f-f;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 43.2px;
+      }
+      .sasha-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        img {
+          width: 400px;
+          height: 580px;
+        }
+        .line {
+          width: 0px;
+          height: 510px;
+          border: 1px solid rgb(91, 91, 91);
+        }
+        .info-text {
+          width: 400px;
+          h2 {
+            font-family: $original-f-f;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+          }
+          p {
+            margin-top: 20px;
+            font-family: $original-f-f;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32.4px;
+            color: rgb(103, 103, 103);
+          }
+        }
+      }
+      .contact-us {
+        text-align: center;
+        margin-top: 150px;
+        h2 {
+          font-family: $original-f-f;
+          font-size: 31px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 43.2px;
+          color: rgb(103, 103, 103);
+        }
+        p {
+          margin: 25px 0px;
+          font-family: $original-f-f;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 33.2px;
+          color: rgb(103, 103, 103);
+        }
+        .contact-btn {
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    width: 100%;
+    background: rgb(209, 209, 209);
+    .about-me-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      #since {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0px;
+        color: #2b2b2b;
+        text-align: center;
+        font-family: $original-f-f;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 43.2px;
+      }
+      .sasha-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        img {
+          width: 320px;
+          height: 470px;
+        }
+        .line {
+          width: 0px;
+          height: 510px;
+          border: 1px solid rgb(91, 91, 91);
+        }
+        .info-text {
+          width: 80%;
+          h2 {
+            font-family: $original-f-f;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+          }
+          p {
+            margin-top: 20px;
+            font-family: $original-f-f;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32.4px;
+            color: rgb(103, 103, 103);
+          }
+        }
+      }
+      .contact-us {
+        text-align: center;
+        margin-top: 80px;
+        h2 {
+          font-family: $original-f-f;
+          font-size: 31px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 43.2px;
+          color: rgb(103, 103, 103);
+        }
+        p {
+          margin: 25px 0px;
+          font-family: $original-f-f;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 33.2px;
+          color: rgb(103, 103, 103);
+        }
+        .contact-btn {
+          margin-bottom: 80px;
         }
       }
     }
