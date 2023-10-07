@@ -86,7 +86,7 @@ function Contact() {
             </select>
             <p id="message">Message</p>
             <textarea name="message" id="text" cols="60" rows="10"></textarea>
-            <p id="send">Send all just in one click!</p>
+            <p id="send-text">Send all just in one click!</p>
             <button
               className="send-btn style2"
               type="submit"

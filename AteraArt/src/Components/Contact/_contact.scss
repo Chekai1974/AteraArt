@@ -1,6 +1,6 @@
 .contact-container {
   width: 100%;
-  background: rgb(209, 209, 209);
+  background: $bg-color-3;
   .contact-content {
     position: relative;
     width: 1200px;
@@ -27,35 +27,51 @@
     .form {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 25px;
+      margin: 0 auto;
+      gap: 5px;
       p {
-        font-size: 20px;
+        margin-top: 25px;
+        font-size: 18px;
         font-family: $original-f-f;
         font-weight: 300;
-        text-align: center;
       }
       input {
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+
+        text-align: left;
+        background: transparent;
         color: #6d6c6c;
-        text-align: center;
+
         width: 700px;
-        height: 30px;
+        height: 40px;
+        padding-left: 20px;
       }
       input::placeholder {
-        text-align: center;
         color: #7f7f7f;
       }
       #select {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: transparent;
+        padding-left: 20px;
+
         letter-spacing: 7px;
         width: 700px;
         height: 40px;
+      }
+      #text {
+        background: rgba(255, 255, 255, 0.082);
+        resize: none;
+      }
+      #send-text{
         text-align: center;
       }
-      #send {
-        margin-top: 20px;
-      }
       .send-btn {
+        width: 100%;
         margin: 20px 0px 80px 0px;
       }
     }
@@ -158,6 +174,7 @@
         }
         .send-btn {
           margin: 20px 0px 80px 0px;
+          width: 80%;
         }
       }
       .modal-window {

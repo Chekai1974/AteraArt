@@ -94,7 +94,7 @@
 }
 
 .nav-container.active {
-  animation: slideDown 1s ease-in-out;
+  animation: slideDown 1.3s ease-in-out;
   padding: 40px;
   background: rgb(132, 132, 132);
   position: fixed;
@@ -103,6 +103,7 @@
   z-index: 9999999;
 }
 .nav-container.active .nav-content {
+  overflow: hidden;
   position: relative;
   display: block;
   width: 100%;
@@ -120,11 +121,12 @@
   position: absolute;
 }
 .nav-container.active .nav-content .navigation .burger-logo img {
+  filter: contrast(65%);
   display: block;
   position: absolute;
-  top: 0;
+  top: 67px;
   right: 100px;
-  width: 60px;
+  width: 45px;
 }
 .nav-container.active .nav-content .title {
   display: none;
@@ -206,7 +208,7 @@
   }
   .nav-container .nav-content .navigation .burger-logo img {
     display: block;
-    width: 60px;
+    width: 45px;
   }
   .nav-container .nav-content .navigation .routs {
     display: none;
@@ -247,7 +249,7 @@
   }
   .nav-container .nav-content .navigation .burger-logo img {
     display: block;
-    width: 60px;
+    width: 45px;
   }
   .nav-container .nav-content .navigation .routs {
     display: none;
@@ -266,15 +268,17 @@
 }
 @keyframes slideDown {
   from {
-    transform: translateY(-100%);
+    opacity: 0;
+    transform: translateY(-50%);
   }
   to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 .section2-container {
   padding: 100px 0px 100px 0px;
-  background: rgb(209, 209, 209);
+  background: rgb(191, 191, 191);
   width: 100%;
 }
 .section2-container .section2-content {
@@ -872,7 +876,7 @@
 }
 .section4-container {
   padding: 100px 0px 100px 0px;
-  background: rgb(209, 209, 209);
+  background: rgb(191, 191, 191);
   width: 100%;
 }
 .section4-container .section4-content {
@@ -898,7 +902,7 @@
   opacity: 0;
   margin: 0 auto;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 46px;
   font-family: "Inter";
   font-weight: 400;
   line-height: 84px;
@@ -1201,6 +1205,13 @@
     width: 100%;
     height: 280px;
   }
+  .section4-container .section4-content .album-media .photo1 h2,
+  .section4-container .section4-content .album-media .photo2 h2,
+  .section4-container .section4-content .album-media .photo3 h2,
+  .section4-container .section4-content .album-media .photo4 h2,
+  .section4-container .section4-content .album-media .photo5 h2 {
+    font-size: 30px;
+  }
 }
 .gif {
   display: flex;
@@ -1208,9 +1219,9 @@
   justify-content: center;
   width: 100%;
   height: 650px;
-  background-image: url("../Images/mzu.gif");
+  background-image: url("../Images/HomePagePhoto/gif.gif");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 70% 90%;
   background-repeat: no-repeat;
 }
 .gif h1 {
@@ -1256,7 +1267,7 @@
 }
 .section6-container {
   padding: 100px 0px 100px 0px;
-  background: rgb(209, 209, 209);
+  background: rgb(191, 191, 191);
   width: 100%;
 }
 .section6-container .section6-content {
@@ -1548,71 +1559,238 @@
     position: absolute;
   }
 }
-.footer-container .footer-content {
-  padding: 30px;
+.footer-container {
+  width: 100%;
   background-color: #2B2B2B;
+}
+.footer-container .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
 }
 .footer-container .footer-content p {
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 15px;
   color: white;
 }
-.footer-container .footer-content .instagram {
+.footer-container .footer-content .about-site {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.footer-container .footer-content .about-site .info ul {
+  padding-top: 10px;
+}
+.footer-container .footer-content .about-site .info ul li {
+  padding: 5px 0px;
+  font-family: "Inter";
+  font-size: 13px;
+  color: rgb(133, 133, 133);
+}
+.footer-container .footer-content .about-site .routs {
+  padding-right: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-container .footer-content .about-site .routs a {
+  font-family: "Inter";
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+.footer-container .footer-content .about-site .routs a.active {
+  color: #f8f092;
+}
+.footer-container .footer-content .privet {
+  border-top: 1px solid silver;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
-.footer-container .footer-content .instagram span {
-  text-decoration: underline;
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.footer-container .footer-content .instagram a {
-  text-decoration: none;
+.footer-container .footer-content .privet .designed span a {
+  margin-left: 10px;
   color: white;
 }
+.footer-container .footer-content .privet .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-container .footer-content .privet .links a {
+  cursor: pointer;
+}
+.footer-container .footer-content .privet .links a img {
+  filter: grayscale(100%);
+}
+.footer-container .footer-content .privet .links a img:hover {
+  filter: none;
+}
 
-@media (max-width: 380px) {
+@media (max-width: 768px) {
   .footer-container .footer-content {
-    padding: 30px;
-    background-color: #2B2B2B;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
   .footer-container .footer-content p {
-    text-align: center;
     font-family: "Inter";
     font-size: 14px;
     color: white;
   }
-  .footer-container .footer-content .instagram {
+  .footer-container .footer-content .about-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  .footer-container .footer-content .about-site .info ul {
+    padding-top: 10px;
+  }
+  .footer-container .footer-content .about-site .info ul li {
+    padding: 5px 0px;
+    font-family: "Inter";
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+  }
+  .footer-container .footer-content .about-site .routs {
+    padding-right: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-container .footer-content .about-site .routs a {
+    font-family: "Inter";
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+  .footer-container .footer-content .about-site .routs a.active {
+    color: #f8f092;
+  }
+}
+@media (max-width: 768px) and (min-width: 600px) {
+  .footer-container .footer-content .about-site .routs {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container .footer-content .privet {
+    border-top: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .footer-container .footer-content .privet .designed span a {
+    margin-left: 10px;
+    color: white;
+  }
+  .footer-container .footer-content .privet .links {
     display: flex;
     align-items: center;
+    gap: 20px;
   }
-  .footer-container .footer-content .instagram span {
-    text-decoration: underline;
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  .footer-container .footer-content .privet .links a {
+    cursor: pointer;
   }
-  .footer-container .footer-content .instagram a {
-    text-decoration: none;
+  .footer-container .footer-content .privet .links a img {
+    filter: grayscale(100%);
+  }
+  .footer-container .footer-content .privet .links a img:hover {
+    filter: none;
+  }
+}
+@media (max-width: 380px) {
+  .footer-container .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-container .footer-content p {
+    font-family: "Inter";
+    font-size: 12px;
     color: white;
+  }
+  .footer-container .footer-content .about-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  .footer-container .footer-content .about-site .info ul {
+    padding-top: 10px;
+  }
+  .footer-container .footer-content .about-site .info ul li {
+    padding: 5px 0px;
+    font-family: "Inter";
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+  }
+  .footer-container .footer-content .about-site .routs {
+    padding-right: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-container .footer-content .about-site .routs a {
+    font-family: "Inter";
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  .footer-container .footer-content .about-site .routs a.active {
+    color: #f8f092;
+  }
+}
+@media (max-width: 380px) and (max-width: 3800px) {
+  .footer-container .footer-content .about-site .routs {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .footer-container .footer-content .privet {
+    border-top: 1px solid silver;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .footer-container .footer-content .privet .designed span a {
+    margin-left: 10px;
+    color: white;
+  }
+  .footer-container .footer-content .privet .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-container .footer-content .privet .links a {
+    cursor: pointer;
+  }
+  .footer-container .footer-content .privet .links a img {
+    filter: grayscale(100%);
+  }
+  .footer-container .footer-content .privet .links a img:hover {
+    filter: none;
   }
 }
 .about-me-container {
   width: 100%;
-  background: rgb(209, 209, 209);
+  background: rgb(191, 191, 191);
 }
 .about-me-container .about-me-content {
   position: relative;
@@ -1998,7 +2176,7 @@
 }
 .contact-container {
   width: 100%;
-  background: rgb(209, 209, 209);
+  background: rgb(191, 191, 191);
 }
 .contact-container .contact-content {
   position: relative;
@@ -2027,40 +2205,52 @@
 .contact-container .contact-content .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 25px;
+  margin: 0 auto;
+  gap: 5px;
 }
 .contact-container .contact-content .form p {
-  font-size: 20px;
+  margin-top: 25px;
+  font-size: 18px;
   font-family: "Inter";
   font-weight: 300;
-  text-align: center;
 }
 .contact-container .contact-content .form input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  text-align: left;
+  background: transparent;
   color: #6d6c6c;
-  text-align: center;
   width: 700px;
-  height: 30px;
+  height: 40px;
+  padding-left: 20px;
 }
 .contact-container .contact-content .form input::-moz-placeholder {
-  text-align: center;
   color: #7f7f7f;
 }
 .contact-container .contact-content .form input::placeholder {
-  text-align: center;
   color: #7f7f7f;
 }
 .contact-container .contact-content .form #select {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+  padding-left: 20px;
   letter-spacing: 7px;
   width: 700px;
   height: 40px;
+}
+.contact-container .contact-content .form #text {
+  background: rgba(255, 255, 255, 0.082);
+  resize: none;
+}
+.contact-container .contact-content .form #send-text {
   text-align: center;
 }
-.contact-container .contact-content .form #send {
-  margin-top: 20px;
-}
 .contact-container .contact-content .form .send-btn {
+  width: 100%;
   margin: 20px 0px 80px 0px;
 }
 .contact-container .contact-content .modal-window {
@@ -2166,6 +2356,7 @@
   }
   .contact-container .contact-content .form .send-btn {
     margin: 20px 0px 80px 0px;
+    width: 80%;
   }
   .contact-container .contact-content .modal-window {
     display: none;

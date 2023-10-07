@@ -47,7 +47,7 @@ function AboutMe() {
             </p>
             <button
               className="contact-btn style2"
-              onClick={() => navigator("/contactme")}
+              onClick={() => navigator("/contact")}
             >
               CONTACT ME
             </button>

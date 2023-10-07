@@ -64,7 +64,7 @@
   }
 }
 .nav-container.active {
-  animation: slideDown 1s ease-in-out;
+  animation: slideDown 1.3s ease-in-out;
   padding: 40px;
   background: rgb(132, 132, 132);
   position: fixed;
@@ -72,6 +72,7 @@
   top: 0;
   z-index: 9999999;
   .nav-content {
+    overflow: hidden;
     position: relative;
     display: block;
     width: 100%;
@@ -88,11 +89,12 @@
       }
       .burger-logo {
         img {
+          filter: contrast(65%);
           display: block;
           position: absolute;
-          top: 0;
+          top: 67px;
           right: 100px;
-          width: 60px;
+          width: 45px;
         }
       }
     }
@@ -175,7 +177,7 @@
         .burger-logo {
           img {
             display: block;
-            width: 60px;
+            width: 45px;
           }
         }
         .routs {
@@ -218,7 +220,7 @@
         .burger-logo {
           img {
             display: block;
-            width: 60px;
+            width: 45px;
           }
         }
         .routs {
@@ -242,9 +244,11 @@
 
 @keyframes slideDown {
   from {
-    transform: translateY(-100%);
+    opacity: 0;
+    transform: translateY(-50%);
   }
   to {
+    opacity: 1;
     transform: translateY(0);
   }
 }

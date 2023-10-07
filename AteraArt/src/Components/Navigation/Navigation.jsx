@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../Images/logo.png";
 import logo_burger from "../../Images/HomePagePhoto/logo_burger.png";
+import logo_burger_close from "../../Images/HomePagePhoto/logo_burger_close.png";
 import { NavLink, useLocation } from "react-router-dom";
 function Navigation() {
   const [burger, set_burger] = useState(false);
@@ -29,7 +30,7 @@ function Navigation() {
         <div className="navigation">
           <img src={logo} id="logo" alt="" />
           <div className="burger-logo" onClick={() => set_burger(!burger)}>
-            <img src={logo_burger} alt="" />
+            <img src={burger ? logo_burger_close : logo_burger} alt="" />
           </div>
           <div className="routs">
             <NavLink
