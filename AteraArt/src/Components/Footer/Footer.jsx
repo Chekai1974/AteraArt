@@ -62,7 +62,7 @@ function Footer() {
             <a href="https://www.instagram.com/atera.art/" target="blank">
               <img src={inst} alt="" />
             </a>
-            <a href="https://wa.me/0992775198?text=Привет!" target="blank">
+            <a href="https://wa.me/+380992775198?text=Hello!" target="blank">
               <img src={wp} alt="" />
             </a>
           </div>
